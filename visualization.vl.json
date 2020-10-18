@@ -1,0 +1,17 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 800,
+  "height": 600,
+  "data": {
+    "url": "https://raw.githubusercontent.com/thesti9/vega/main/airports.csv"
+  },
+  "projection": {"type": "equalEarth"},
+  "mark": "circle",
+  "encoding": {
+    "longitude": {"field": "longitude_deg", "type": "quantitative"},
+    "latitude": {"field": "latitude_deg", "type": "quantitative"},
+    "size": {"value": 1},
+    "color": {"field": "", "type": "nominal"}
+  },
+  "config": {}
+}
